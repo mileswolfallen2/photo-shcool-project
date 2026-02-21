@@ -1,0 +1,49 @@
+:root{
+  --bg:#0f1720;
+  --card:#0f1720;
+  --muted:#9aa4b2;
+  --accent:#ffd166;
+  --glass: rgba(255,255,255,0.04);
+  --radius:14px;
+  --wrap:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+  background:linear-gradient(180deg,#071018 0%, #0f1720 100%);
+  color:#e6eef6; -webkit-font-smoothing:antialiased; line-height:1.45;
+}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:2rem}
+.site-header{backdrop-filter:blur(6px);position:sticky;top:0;z-index:40;background:linear-gradient(180deg,rgba(0,0,0,0.25),transparent)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem}
+.logo{font-weight:700;letter-spacing:0.4px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:1.25rem;font-weight:600}
+
+.hero{padding:5rem 0;background:linear-gradient(180deg,rgba(13,24,34,0.2),transparent)}
+.hero-inner{display:flex;flex-direction:column;gap:.6rem}
+.hero-title{font-size:clamp(1.6rem,4vw,3.2rem);margin:0;font-weight:800}
+.hero-sub{color:var(--muted);max-width:60ch}
+
+.section-title{font-size:1.25rem;margin:0 0 1rem 0;font-weight:700}
+
+.gallery .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem}
+.photo-card{background:var(--glass);border-radius:var(--radius);overflow:hidden;padding:0;display:flex;flex-direction:column;align-items:stretch;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease}
+.photo-card:focus{outline:2px solid rgba(255,209,102,0.18)}
+.photo-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.photo-placeholder{height:220px;background:linear-gradient(135deg,#0b1a28 0%, #0f2838 100%);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:2rem}
+.photo-placeholder svg{width:48px;height:48px;opacity:.85}
+.photo-card figcaption{padding:0.9rem 1rem;color:var(--muted);font-weight:600}
+
+.about,.contact{padding:2rem 0}
+.site-footer{padding:1.5rem 0;text-align:center;color:var(--muted)}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(18px) scale(.995);transition:opacity .7s cubic-bezier(.2,.9,.3,1),transform .7s cubic-bezier(.2,.9,.3,1)}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* small devices */
+@media (max-width:600px){.wrap{padding:1rem}.photo-placeholder{height:160px}}
+
+/* subtle focus and accessibility */
+a{color:var(--accent)}
