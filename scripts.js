@@ -46,16 +46,5 @@
   }
   document.querySelectorAll('.photo-card').forEach(c => bindTilt(c));
 
-  // Allow clicking a placeholder to replace with image URL (quick demo)
-  document.querySelectorAll('.photo-card').forEach(card => {
-    card.addEventListener('click', async () => {
-      const url = prompt('Paste an image URL to use for this card:');
-      if (!url) return;
-      const ph = card.querySelector('.photo-placeholder');
-      ph.style.backgroundImage = `url(${url})`;
-      ph.style.backgroundSize = 'cover';
-      ph.style.backgroundPosition = 'center';
-      ph.innerHTML = '';
-    })
-  })
+  // Image insertion is handled by editing the project pages and placing <img> tags.
 })();
