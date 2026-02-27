@@ -46,8 +46,34 @@ body{
 
 /* Project page grid */
 .photo-page .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
-.photo-page .photo-spot{background:var(--glass);border-radius:12px;overflow:hidden;cursor:pointer;min-height:200px;display:flex;align-items:stretch}
-.photo-page .photo-spot .photo-placeholder{height:100%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:1.4rem;padding:1rem}
+.photo-page .photo-spot{
+  background:var(--glass);
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+  /* allow height to grow/shrink with content instead of forcing 200px */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem;
+}
+.photo-page .photo-spot .photo-placeholder{
+  /* removed fixed height so it sizes to the image inside */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  font-size:1.4rem;
+  padding:1rem;
+}
+/* make images scale naturally and not stretch to fill the card */
+.project-img{
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  margin:0 auto;
+}
 
 /* Home link emphasis on project pages */
 .photo-page .nav a{background:rgba(255,209,102,0.06);padding:.4rem .7rem;border-radius:8px;color:var(--accent);font-weight:700}
