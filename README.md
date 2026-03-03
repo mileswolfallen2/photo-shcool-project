@@ -41,6 +41,8 @@ photos/           - Directory containing the image assets
 ## 📌 Notes
 
 - Replace placeholder images in the `photos/` directory with your own.
+- Optimize image file sizes (resize dimensions, compress, or convert to WebP/AVIF) to improve load times.
+- Use lazy loading (`loading="lazy"`) and modern attributes (`decoding="async"`) on `<img>` elements (already applied in this template).
 - Feel free to enhance the project with additional features like a lightbox effect, responsive grid, or image captions.
 
 ---
