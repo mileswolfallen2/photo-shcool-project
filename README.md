@@ -1,5 +1,6 @@
 # Photo School Project
 
+
 **Photo School Project** is a simple web-based photo gallery created as part of a school assignment. It demonstrates basic HTML, CSS, and JavaScript skills by organizing images across multiple pages and adding interactive behavior.
 
 ## 📁 Project Structure
@@ -48,3 +49,4 @@ photos/           - Directory containing the image assets
 ---
 
 *This progect is made for school or personal use. NOT COMMERCIAL it is free to use for commercial but is not made for it. Do not make comments or issues to add commercial staderds or fetchers this is for school or personal use and thanks for reding the readme*
+
