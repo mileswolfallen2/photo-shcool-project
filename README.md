@@ -4,11 +4,9 @@
 The Photo School Project aims to provide an interactive and user-friendly platform for photography enthusiasts to enhance their skills and share their work. This project serves as a comprehensive resource for learning photography techniques and connecting with others in the photography community.
 
 ## Features
-- **User Registration and Profiles:** Users can create accounts, set up profiles, and share their photography journeys.
-- **Tutorials and Guides:** A wide range of tutorials covering various photography techniques and styles.
-- **Image Uploads:** Users can upload and showcase their photographs with options for feedback and comments.
-- **Community Engagement:** Users can interact through comments and discussions on tutorials and photos.
 - **Responsive Design:** The platform is optimized for both desktop and mobile users.
+- **esay to use** to make yours with editing
+- **free forever** no cost forever free 
 
 ## Project Structure
 ```plaintext
