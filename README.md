@@ -1,62 +1,52 @@
 # Photo School Project
 
-## Project Purpose
-The Photo School Project aims to provide an interactive and user-friendly platform for photography enthusiasts to enhance their skills and share their work. This project serves as a comprehensive resource for learning photography techniques and connecting with others in the photography community.
 
-## Features
-- **Responsive Design:** The platform is optimized for both desktop and mobile users.
-- **esay to use** to make yours with editing
-- **free forever** no cost forever free 
+**Photo School Project** is a simple web-based photo gallery created as part of a school assignment. It demonstrates basic HTML, CSS, and JavaScript skills by organizing images across multiple pages and adding interactive behavior.
 
-## Project Structure
-```plaintext
-/photo-school-project
-├── README.md
-├── src
-│   ├── components    # React components
-│   ├── pages         # Application pages
-│   ├── styles        # CSS and styling files
-│   └── utils         # Utility functions
-├── public            # Public assets
-└── package.json      # Project metadata and dependencies
+## 📁 Project Structure
+
+```
+index.html       - Main landing page with navigation
+photos1.html     - Gallery page 1
+photos2.html     - Gallery page 2
+photos3.html     - Gallery page 3
+photos4.html     - Gallery page 4
+scripts.js       - JavaScript for interactivity (e.g., navigation or lightbox)
+styles.css       - Styling for layout and appearance
+photos/           - Directory containing the image assets
 ```
 
-## How to Use
-1. Clone the repository to your local machine using:
-   ```bash
-   git clone https://github.com/mileswolfallen2/photo-school-project.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd photo-school-project
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the application:
-   ```bash
-   npm start
-   ```
+## 🚀 Features
 
-## Installation
-Ensure you have Node.js and npm installed on your machine. Follow the instructions in the [Node.js documentation](https://nodejs.org/) for installation.
+- Responsive layout using CSS
+- Separate pages for different sets of photos
+- Basic JavaScript to handle events or navigation
+- Basic config for your photos 
 
-## Development
-To contribute to the project, please follow the steps below:
-1. Fork the repository on GitHub.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature-branch-name
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add your message here"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-branch-name
-   ```
-5. Open a pull request to the main repository for review.
+## 🛠️ Technologies Used
 
-Thank you for contributing to the Photo School Project!
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## 🧩 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd photo-shcool-project
+   ```
+2. Open `index.html` in a web browser.
+3. Navigate through the photo pages using links on the main page.
+
+## 📌 Notes
+
+- Replace placeholder images in the `photos/` directory with your own.
+- Optimize image file sizes (resize dimensions, compress, or convert to WebP/AVIF) to improve load times.
+- Use lazy loading (`loading="lazy"`) and modern attributes (`decoding="async"`) on `<img>` elements (already applied in this template).
+- Feel free to enhance the project with additional features like a lightbox effect, responsive grid, or image captions.
+
+---
+
+*This progect is made for school or personal use. NOT COMMERCIAL it is free to use for commercial but is not made for it. Do not make comments or issues to add commercial staderds or fetchers this is for school or personal use and thanks for reding the readme*
+
